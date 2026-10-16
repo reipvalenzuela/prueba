@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende programación, desarrollo web, inteligencia artificial y cloud con TechAcademy.">
+  <title>TechAcademy | Impulsa tu futuro con tecnología</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="TechAcademy, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Tech<span class="brand-accent">Academy</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#inicio">Inicio</a><a href="#cursos">Cursos</a><a href="#categorias">Categorías</a>
+        <a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+        <a class="button button-small" href="#cursos">Explorar cursos <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> APRENDE. CREA. EVOLUCIONA.</span>
+          <h1>Impulsa tu futuro <span class="gradient-text">con tecnología</span></h1>
+          <p>Aprende programación, desarrollo web, inteligencia artificial y tecnologías cloud con cursos diseñados para desarrollar habilidades que te ayuden a crecer profesionalmente.</p>
+          <div class="hero-actions">
+            <a class="button" href="#cursos">Explorar cursos <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#registro"><span class="play-icon" aria-hidden="true">✦</span> Recibir novedades</a>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>JD</span><span>ML</span><span>AR</span><span>+</span></div>
+            <p><strong>Aprende algo nuevo hoy</strong><br><span>Tu siguiente paso empieza aquí</span></p>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=85" alt="Personas aprendiendo y colaborando frente a una computadora" fetchpriority="high">
+            <div class="floating-card code-card"><div class="code-top"><i></i><i></i><i></i><span>app.js</span></div><code><span class="code-purple">const</span> future = <span class="code-blue">"yours"</span>;<br><span class="code-purple">function</span> <span class="code-green">learn</span>() {<br>&nbsp; return <span class="code-blue">"keep growing"</span>;<br>}</code></div>
+            <div class="floating-card learning-card"><span class="learning-icon">✓</span><div><strong>Aprendizaje práctico</strong><small>Un proyecto a la vez</small></div></div>
+          </div>
+          <div class="tech-tags" aria-label="Tecnologías destacadas"><span>JavaScript</span><span>Python</span><span>AWS Cloud</span><span>SQL</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Ventajas de TechAcademy">
+      <div class="container stats-grid"><div><strong>100%</strong><span>Enfoque práctico</span></div><div><strong>A tu ritmo</strong><span>Aprende donde quieras</span></div><div><strong>Skills reales</strong><span>Conocimiento aplicable</span></div><div><strong>Siempre</strong><span>Un nuevo reto por delante</span></div></div>
+    </section>
+
+    <section class="section benefits-section" id="nosotros">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">¿POR QUÉ TECHACADEMY?</span><h2>Aprende con un propósito.<br><span class="muted-heading">Crece con confianza.</span></h2><p>Herramientas y conocimientos para convertir tus ideas en proyectos reales.</p></div>
+        <div class="benefits-grid">
+          <article class="benefit-card reveal"><div class="benefit-icon purple">⌘</div><h3>Aprendizaje práctico</h3><p>Refuerza cada concepto creando proyectos que puedes mostrar con orgullo.</p></article>
+          <article class="benefit-card reveal"><div class="benefit-icon blue">↻</div><h3>Cursos actualizados</h3><p>Explora contenidos alineados con herramientas y tendencias del sector.</p></article>
+          <article class="benefit-card reveal"><div class="benefit-icon green">◷</div><h3>Aprende a tu ritmo</h3><p>Organiza tu aprendizaje según tus horarios y objetivos personales.</p></article>
+          <article class="benefit-card reveal"><div class="benefit-icon orange">↗</div><h3>Crece profesionalmente</h3><p>Desarrolla habilidades que te ayuden a dar el siguiente paso en tu carrera.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section courses-section" id="cursos">
+      <div class="container">
+        <div class="section-heading section-heading-row reveal"><div><span class="eyebrow">TU PRÓXIMO RETO</span><h2>Encuentra tu próximo <span class="gradient-text">curso</span></h2><p>Aprende nuevas habilidades y construye tu futuro tecnológico.</p></div><div class="carousel-controls"><button class="icon-button" id="prev-course" type="button" aria-label="Cursos anteriores">←</button><button class="icon-button" id="next-course" type="button" aria-label="Cursos siguientes">→</button></div></div>
+        <div class="filter-bar" aria-label="Filtrar cursos por categoría" id="course-filters">
+          <button class="filter-chip active" type="button" data-filter="Todos" aria-pressed="true">Todos los cursos</button>
+          <button class="filter-chip" type="button" data-filter="Desarrollo Web" aria-pressed="false">Desarrollo Web</button>
+          <button class="filter-chip" type="button" data-filter="Backend y APIs" aria-pressed="false">Backend y APIs</button>
+          <button class="filter-chip" type="button" data-filter="Inteligencia Artificial" aria-pressed="false">IA</button>
+          <button class="filter-chip" type="button" data-filter="Cloud Computing" aria-pressed="false">Cloud</button>
+          <button class="filter-chip" type="button" data-filter="Bases de Datos" aria-pressed="false">Bases de datos</button>
+          <button class="filter-chip" type="button" data-filter="Ciberseguridad" aria-pressed="false">Ciberseguridad</button>
+        </div>
+        <div class="course-viewport" id="course-viewport" tabindex="0" aria-label="Carrusel de cursos. Usa las flechas izquierda y derecha para navegar.">
+          <div class="course-track" id="course-track">
+            <article class="course-card" data-category="Desarrollo Web"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="Espacio de trabajo para desarrollo web" loading="lazy"><div class="course-content"><span class="course-category">Desarrollo Web</span><h3>Desarrollo Web Full Stack</h3><p>Crea experiencias web desde el frontend hasta el backend.</p><div class="course-meta"><span>◷ 24 horas</span><span>Nivel inicial</span></div><div class="course-bottom"><strong class="price">S/ 89.90</strong><a class="text-link" href="#registro" aria-label="Consultar novedades sobre Desarrollo Web Full Stack">Ver curso →</a></div></div></article>
+            <article class="course-card" data-category="Backend y APIs"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80" alt="Código fuente en un editor de programación" loading="lazy"><div class="course-content"><span class="course-category">Backend y APIs</span><h3>Java y Spring Boot</h3><p>Construye APIs REST robustas con herramientas modernas.</p><div class="course-meta"><span>◷ 18 horas</span><span>Nivel intermedio</span></div><div class="course-bottom"><strong class="price">S/ 99.90</strong><a class="text-link" href="#registro" aria-label="Consultar novedades sobre Java y Spring Boot">Ver curso →</a></div></div></article>
+            <article class="course-card" data-category="Desarrollo Web"><img src="https://images.unsplash.com/photo-1555069465-3e4f5d7c8d18?auto=format&fit=crop&w=700&q=80" alt="Pantalla con código JavaScript" loading="lazy"><div class="course-content"><span class="course-category">Desarrollo Web</span><h3>JavaScript y TypeScript</h3><p>Domina los fundamentos para crear aplicaciones dinámicas.</p><div class="course-meta"><span>◷ 16 horas</span><span>Nivel inicial</span></div><div class="course-bottom"><strong class="price free">Gratis</strong><a class="text-link" href="#registro" aria-label="Consultar novedades sobre JavaScript y TypeScript">Ver curso →</a></div></div></article>
+            <article class="course-card" data-category="Desarrollo Web"><img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=700&q=80" alt="Diseño de una aplicación en una pantalla" loading="lazy"><div class="course-content"><span class="course-category">Desarrollo Web</span><h3>React y Next.js</h3><p>Aprende a estructurar interfaces web rápidas y reutilizables.</p><div class="course-meta"><span>◷ 20 horas</span><span>Nivel intermedio</span></div><div class="course-bottom"><strong class="price">S/ 109.90</strong><a class="text-link" href="#registro" aria-label="Consultar novedades sobre React y Next.js">Ver curso →</a></div></div></article>
+            <article class="course-card" data-category="Inteligencia Artificial"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=700&q=80" alt="Visualización abstracta de inteligencia artificial" loading="lazy"><div class="course-content"><span class="course-category">Inteligencia Artificial</span><h3>Python e Inteligencia Artificial</h3><p>Explora Python, automatización y conceptos de IA.</p><div class="course-meta"><span>◷ 22 horas</span><span>Nivel inicial</span></div><div class="course-bottom"><strong class="price">S/ 119.90</strong><a class="text-link" href="#registro" aria-label="Consultar novedades sobre Python e Inteligencia Artificial">Ver curso →</a></div></div></article>
+            <article class="course-card" data-category="Cloud Computing"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=700&q=80" alt="Planeta Tierra con conexiones digitales" loading="lazy"><div class="course-content"><span class="course-category">Cloud Computing</span><h3>AWS y Computación en la Nube</h3><p>Conoce servicios cloud y fundamentos de arquitectura.</p><div class="course-meta"><span>◷ 14 horas</span><span>Nivel inicial</span></div><div class="course-bottom"><strong class="price">S/ 89.90</strong><a class="text-link" href="#registro" aria-label="Consultar novedades sobre AWS y Computación en la Nube">Ver curso →</a></div></div></article>
+            <article class="course-card" data-category="Bases de Datos"><img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=700&q=80" alt="Visualización de datos y base de datos" loading="lazy"><div class="course-content"><span class="course-category">Bases de Datos</span><h3>Fundamentos de SQL</h3><p>Consulta, organiza y administra información con SQL.</p><div class="course-meta"><span>◷ 12 horas</span><span>Nivel inicial</span></div><div class="course-bottom"><strong class="price free">Gratis</strong><a class="text-link" href="#registro" aria-label="Consultar novedades sobre Fundamentos de SQL">Ver curso →</a></div></div></article>
+            <article class="course-card" data-category="Ciberseguridad"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=700&q=80" alt="Circuitos digitales que representan ciberseguridad" loading="lazy"><div class="course-content"><span class="course-category">Ciberseguridad</span><h3>Introducción a la Ciberseguridad</h3><p>Identifica riesgos y aprende buenas prácticas digitales.</p><div class="course-meta"><span>◷ 10 horas</span><span>Nivel inicial</span></div><div class="course-bottom"><strong class="price">S/ 69.90</strong><a class="text-link" href="#registro" aria-label="Consultar novedades sobre Introducción a la Ciberseguridad">Ver curso →</a></div></div></article>
+          </div>
+        </div>
+        <p class="carousel-hint">Desliza para descubrir más cursos <span aria-hidden="true">⟷</span></p>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="categorias">
+      <div class="container"><div class="section-heading reveal"><span class="eyebrow">EXPLORA TUS INTERESES</span><h2>¿Qué quieres <span class="gradient-text">aprender hoy?</span></h2><p>Elige una ruta y encuentra contenido para seguir avanzando.</p></div>
+        <div class="categories-grid">
+          <button class="category-card reveal" type="button" data-category="Desarrollo Web"><span class="category-symbol purple">⌘</span><span><strong>Desarrollo Web</strong><small>Interfaces y experiencias digitales</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card reveal" type="button" data-category="Backend y APIs"><span class="category-symbol blue">{ }</span><span><strong>Backend y APIs</strong><small>Servicios, lógica y arquitectura</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card reveal" type="button" data-category="Inteligencia Artificial"><span class="category-symbol orange">✳</span><span><strong>Inteligencia Artificial</strong><small>Datos, modelos y automatización</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card reveal" type="button" data-category="Cloud Computing"><span class="category-symbol blue">☁</span><span><strong>Cloud Computing</strong><small>Infraestructura y servicios cloud</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card reveal" type="button" data-category="Bases de Datos"><span class="category-symbol green">▤</span><span><strong>Bases de Datos</strong><small>Datos ordenados y disponibles</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card reveal" type="button" data-category="Ciberseguridad"><span class="category-symbol purple">⬡</span><span><strong>Ciberseguridad</strong><small>Protección y seguridad digital</small></span><span class="category-arrow">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section signup-section" id="registro">
+      <div class="container signup-grid">
+        <div class="signup-copy reveal"><span class="eyebrow">IDEAS QUE TE HACEN CRECER</span><h2>Recibe novedades y <span class="gradient-text">aprende algo nuevo</span></h2><p>Suscríbete para recibir información sobre nuevos cursos, recursos gratuitos y oportunidades para impulsar tu carrera tecnológica.</p><ul class="signup-points"><li><span>✓</span> Recursos seleccionados para ti</li><li><span>✓</span> Novedades y cursos destacados</li><li><span>✓</span> Sin ruido, solo contenido útil</li></ul></div>
+        <form class="signup-form reveal" id="signup-form" novalidate>
+          <div class="form-heading"><span class="form-icon">✉</span><div><h3>Únete a la comunidad</h3><p>Déjanos tu correo para mantenerte al día.</p></div></div>
+          <div class="form-field"><label for="name">Nombre <span>(opcional)</span></label><input type="text" id="name" name="name" autocomplete="name" placeholder="¿Cómo te llamas?"><small class="field-error" id="name-error"></small></div>
+          <div class="form-field"><label for="email">Correo electrónico <span class="required">*</span></label><input type="email" id="email" name="email" autocomplete="email" placeholder="tu@correo.com" required aria-describedby="email-error"><small class="field-error" id="email-error"></small></div>
+          <div class="consent-field"><input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error"><label for="consent">Acepto recibir comunicaciones y he leído la <a href="#privacidad">política de privacidad</a>.</label></div><small class="field-error" id="consent-error"></small>
+          <button class="button submit-button" id="submit-button" type="submit">Quiero recibir novedades <span aria-hidden="true">→</span></button>
+          <p class="form-note">Este formulario es una demostración y no enviará ni almacenará tus datos.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section testimonials-section">
+      <div class="container"><div class="section-heading reveal"><span class="eyebrow">EXPERIENCIAS DE EJEMPLO</span><h2>Aprender abre <span class="gradient-text">nuevos caminos</span></h2><p>Historias ficticias que representan objetivos comunes de nuestros estudiantes.</p></div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal"><div class="stars" aria-label="Cinco estrellas de ejemplo">★★★★★</div><blockquote>“Poder practicar mientras aprendía me ayudó a ordenar mis ideas y avanzar proyecto por proyecto.”</blockquote><div class="person"><div class="person-avatar avatar-one">LM</div><div><strong>Lucía M.</strong><span>Estudiante de desarrollo web</span></div></div></article>
+          <article class="testimonial-card reveal"><div class="stars" aria-label="Cinco estrellas de ejemplo">★★★★★</div><blockquote>“Me gustó poder organizar las lecciones alrededor de mis horarios y seguir aprendiendo con constancia.”</blockquote><div class="person"><div class="person-avatar avatar-two">DR</div><div><strong>Diego R.</strong><span>Desarrollador en formación</span></div></div></article>
+          <article class="testimonial-card reveal"><div class="stars" aria-label="Cinco estrellas de ejemplo">★★★★★</div><blockquote>“Explorar temas nuevos me dio ideas para mi siguiente proyecto y para las habilidades que quiero desarrollar.”</blockquote><div class="person"><div class="person-avatar avatar-three">CF</div><div><strong>Camila F.</strong><span>Entusiasta de tecnología</span></div></div></article>
+        </div><p class="demo-disclaimer">Los nombres y comentarios de esta sección son ficticios y se muestran únicamente como ejemplo de diseño.</p>
+      </div>
+    </section>
+
+    <section class="final-cta"><div class="container cta-inner reveal"><div><span class="eyebrow">EL SIGUIENTE PASO ES TUYO</span><h2>Tu próxima oportunidad comienza con lo que aprendes hoy.</h2></div><a class="button button-light" href="#cursos">Encuentra tu curso <span aria-hidden="true">→</span></a><div class="cta-orb orb-one"></div><div class="cta-orb orb-two"></div></div></section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="container footer-main">
+      <div class="footer-brand-col"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Tech<span class="brand-accent">Academy</span></span></a><p>Aprende hoy las habilidades que te ayudarán a construir lo que viene mañana.</p><div class="social-links"><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (sitio externo)">in</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (sitio externo)">◎</a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (sitio externo)">▶</a></div></div>
+      <div class="footer-column"><h3>Explora</h3><a href="#inicio">Inicio</a><a href="#cursos">Cursos</a><a href="#categorias">Categorías</a><a href="#nosotros">Nosotros</a></div>
+      <div class="footer-column"><h3>Categorías</h3><a href="#cursos" data-footer-filter="Desarrollo Web">Desarrollo Web</a><a href="#cursos" data-footer-filter="Backend y APIs">Backend y APIs</a><a href="#cursos" data-footer-filter="Cloud Computing">Cloud Computing</a><a href="#cursos" data-footer-filter="Ciberseguridad">Ciberseguridad</a></div>
+      <div class="footer-column"><h3>Contacto</h3><a href="mailto:hola@techacademy.example">hola@techacademy.example</a><a href="#registro">Recibir novedades</a><a href="#privacidad">Política de privacidad</a><a href="#terminos">Términos de uso</a></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="current-year"></span> TechAcademy. Todos los derechos reservados.</p><p>Diseñado para aprender y crear.</p></div>
+    <div class="legal-anchors" id="privacidad"><span>Política de privacidad: añade aquí el contenido legal correspondiente antes de publicar.</span><span id="terminos">Términos de uso: añade aquí las condiciones del servicio antes de publicar.</span></div>
+  </footer>
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Volver al inicio" title="Volver al inicio">↑</button>
+</body>
+</html>
